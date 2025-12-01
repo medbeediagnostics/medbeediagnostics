@@ -6,36 +6,18 @@
   <title>About — Medbee Diagnostics</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <section style="display:flex; gap:30px; align-items:flex-start; padding:40px 20px; background:#f3f6ff; border-radius:12px; margin-bottom:40px;">
 
-  <div style="flex:0 0 220px;">
-    <img src="manish photo.jpeg" alt="Manish Sinha" style="width:100%; border-radius:12px; box-shadow:0 4px 14px rgba(0,0,0,0.15);">
-  </div>
-
-  <div style="flex:1;">
-    <h1 style="margin:0; font-size:32px;">Manish Sinha</h1>
-    <h3 style="margin:4px 0 18px; color:#444;">Founder & CEO</h3>
-
-    <h2 style="margin-top:10px;">Vision</h2>
-    <p style="line-height:1.6;">
-      To revolutionize clinical laboratory services by implementing automated solutions and artificial intelligence,
-      while maintaining personal connections with healthcare providers and patients, ultimately improving healthcare
-      delivery across all communities we serve.
-    </p>
-
-    <h2>Mission</h2>
-    <p style="line-height:1.6;">
-      To support healthcare providers and patients with rapid, accurate, and affordable clinical testing services that
-      meet the highest quality standards.
-    </p>
-  </div>
-
-</section>
-
+  <!-- HEADER START -->
   <header class="site-header">
     <div class="container header-inner">
-      <div class="brand"><a href="index.html"><img src="logo.png" alt="Medbee Diagnostics" class="logo" /></a></div>
+      <div class="brand">
+        <a href="index.html">
+          <img src="logo.png" alt="Medbee Diagnostics" class="logo" />
+        </a>
+      </div>
+
       <nav class="main-nav">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
@@ -44,7 +26,40 @@
       </nav>
     </div>
   </header>
+  <!-- HEADER END -->
 
+
+  <!-- FOUNDER SECTION (SHIFTED BELOW HEADER) -->
+  <section style="display:flex; gap:30px; align-items:flex-start; padding:40px 20px; background:#f3f6ff; border-radius:12px; margin-bottom:40px;">
+
+    <div style="flex:0 0 220px;">
+      <img src="manish photo.jpeg" alt="Manish Sinha"
+        style="width:100%; border-radius:12px; box-shadow:0 4px 14px rgba(0,0,0,0.15);">
+    </div>
+
+    <div style="flex:1;">
+      <h1 style="margin:0; font-size:32px;">Manish Sinha</h1>
+      <h3 style="margin:4px 0 18px; color:#444;">Founder & CEO</h3>
+
+      <h2 style="margin-top:10px;">Vision</h2>
+      <p style="line-height:1.6;">
+        To revolutionize clinical laboratory services by implementing automated solutions and artificial intelligence,
+        while maintaining personal connections with healthcare providers and patients, ultimately improving healthcare
+        delivery across all communities we serve.
+      </p>
+
+      <h2>Mission</h2>
+      <p style="line-height:1.6;">
+        To support healthcare providers and patients with rapid, accurate, and affordable clinical testing services that
+        meet the highest quality standards.
+      </p>
+    </div>
+
+  </section>
+  <!-- FOUNDER SECTION END -->
+
+
+  <!-- MAIN CONTENT -->
   <main class="container content">
     <h1>About Medbee Diagnostics</h1>
 
@@ -65,6 +80,9 @@
     </div>
   </footer>
 
-  <script>document.getElementById('year2').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('year2').textContent = new Date().getFullYear();
+  </script>
+
 </body>
 </html>
