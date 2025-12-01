@@ -1,30 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>About – Medbee Diagnostics</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Medbee Diagnostics</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Medbee Diagnostics</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand"><a href="index.html"><img src="logo.png" alt="Medbee Diagnostics" class="logo" /></a></div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <h2>About Us</h2>
-  <p>Medbee Diagnostics ek advanced, fully automated pathology center hai jiska uddeshya har patient ko fast, accurate aur reliable diagnostic reports provide karna hai. Hamari team quality ke standards ko follow karti hai aur har test ko scientifically verify karke hi patient tak pahunchati hai.
+  <main class="container content">
+    <h1>About Medbee Diagnostics</h1>
 
-Hamare lab me world-class analyzers, high-precision machines aur digitally controlled equipment ka istemaal hota hai, jo human-error ko minimum rakhta hai. Medbee Diagnostics ka pura workflow automated hai—sample collection se lekar report delivery tak—jisse result ki accuracy aur speed dono hi improve hoti hain.
+    <p>Medbee Diagnostics is a modern, fully-equipped pathology laboratory committed to providing accurate and timely diagnostic services. Established with the goal of supporting better patient outcomes, our laboratory combines high-quality instruments with skilled personnel to ensure precision in every test result.</p>
 
-Patient care hamari pehli priority hai. Hamari expert phlebotomy team painless sample collection me trained hai, aur special care un patients ke liye hoti hai jo senior citizens, children ya critical condition me hote hain. Cleanliness, hygiene aur safety protocols ko ham kabhi compromise nahi karte.
+    <p>We follow strict quality assurance protocols and use automated analyzers for hematology, biochemistry, microbiology and serology. Our team of experienced pathologists reviews critical results and provides expert guidance to treating physicians when required. Patient safety and confidentiality are top priorities in all our processes.</p>
 
-Hamari reporting system 24×7 active hai aur aap apni reports ko online easily download kar sakte hain. Doctors aur clinics ke liye ham dedicated support, fast-TAT (Turn Around Time), aur customized diagnostic panels provide karte hain.
+    <p>To make healthcare accessible, we offer home sample collection across our service areas, safe sample transport, and fast online report delivery. Our turnaround times are optimized using efficient logistics and round-the-clock laboratory workflows for emergency testing.</p>
 
-Medbee Diagnostics ka vision hai ki Patna aur aas-paas ke region me high-quality diagnostics ko accessible aur affordable बनाया जाए. Ham har roj naye technologies adopt karte hue healthcare ko aur behtar banane ki taraf badh rahe hain.</p>
+    <p>Medbee Diagnostics is also focused on continuous improvement — we regularly calibrate equipment, participate in external quality assessments, and train staff on the latest laboratory best practices. This commitment to quality helps us maintain trust among doctors and patients alike.</p>
 
+    <p>Our corporate office in Patna serves as the coordination hub for operations across Bihar & Jharkhand. We are dedicated to expanding our services responsibly while maintaining the accuracy and reliability that our patients depend on.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year2"></span> Medbee Diagnostics — medbeediagnostics@gmail.com — 9334639392</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year2').textContent = new Date().getFullYear();</script>
 </body>
 </html>
