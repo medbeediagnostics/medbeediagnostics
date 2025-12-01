@@ -1,32 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Medbee Diagnostics – Home</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Medbee Diagnostics — Home</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Medbee Diagnostics</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="index.html"><img src="logo.png" alt="Medbee Diagnostics" class="logo" /></a>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <section class="hero">
-    <h2>Your Trusted Diagnostic Partner</h2>
-    <p>Fast, reliable and affordable lab testing services.</p>
-  </section>
+  <main>
+    <section class="hero container">
+      <div class="hero-left">
+        <h1>Your Trusted Diagnostic Partner</h1>
+        <p class="lead">Fast, reliable and affordable pathology & lab testing services with home sample collection and accurate reporting.</p>
 
-  <section class="highlights">
-    <h3>Why Choose Us?</h3>
-    <ul>
-      <li>Automated Lab Machines</li>
-      <li>Accurate Reporting</li>
-      <li>Home Sample Collection</li>
-    </ul>
-  </section>
+        <ul class="quick">
+          <li><strong>Email:</strong> <a href="mailto:medbeediagnostics@gmail.com">medbeediagnostics@gmail.com</a></li>
+          <li><strong>Phone:</strong> <a href="tel:+919334639392">9334639392</a></li>
+          <li><a class="whatsapp" href="https://wa.me/919334639392" target="_blank">Chat on WhatsApp</a></li>
+        </ul>
+      </div>
+
+      <div class="hero-right">
+        <img src="lab.jpg" alt="Pathology testing" class="lab-photo" />
+      </div>
+    </section>
+
+    <section class="map-section container">
+      <div class="map-box">
+        <img src="india-map.png" alt="India map with Bihar & Jharkhand highlighted" class="india-map" />
+        <p class="map-caption">Present in <strong>Bihar</strong> & <strong>Jharkhand</strong></p>
+      </div>
+    </section>
+
+    <section class="highlights container">
+      <h2>Why choose Medbee Diagnostics?</h2>
+      <div class="grid-3">
+        <div class="card"><h3>Accurate Reports</h3><p>Automated analyzers and experienced pathologists ensure accurate and reliable results.</p></div>
+        <div class="card"><h3>Home Collection</h3><p>Convenient home sample collection with safe packaging and timely pick-up.</p></div>
+        <div class="card"><h3>Fast Turnaround</h3><p>Quick processing and easy online report delivery.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Medbee Diagnostics — Corporate office: 107, Kharunia, Chhoti Pahari, Patna - 800007</p>
+      <p>Email: medbeediagnostics@gmail.com | Phone: 9334639392</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
