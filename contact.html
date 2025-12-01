@@ -1,36 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Contact – Medbee Diagnostics</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Medbee Diagnostics</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Medbee Diagnostics</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand"><a href="index.html"><img src="logo.png" alt="Medbee Diagnostics" class="logo" /></a></div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <h2>Contact Us</h2>
+  <main class="container content">
+    <h1>Contact Us</h1>
 
-  <p><b>Corporate Office:</b> 107, Kharunia, Chhoti Pahari, Patna-800007</p>
-  <p><b>Email:</b> medbeediagnostics@gmail.com</p>
-  <p><b>Phone:</b> 9334639392</p>
+    <p><strong>Corporate Office:</strong> 107, Kharunia, Chhoti Pahari, Sahara Road, Kharunia, Patna - 800007</p>
+    <p><strong>Email:</strong> <a href="mailto:medbeediagnostics@gmail.com">medbeediagnostics@gmail.com</a></p>
+    <p><strong>Phone:</strong> <a href="tel:+919334639392">9334639392</a></p>
 
-  <h3>Book an Appointment</h3>
+    <h2>Book a Home Collection</h2>
+    <form action="#" class="contact-form" onsubmit="alert('Form submitted (demo). Please implement backend or use email link)'; return false;">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="tel" name="phone" placeholder="Mobile Number" required />
+      <input type="text" name="tests" placeholder="Test(s) required" />
+      <button type="submit">Request Collection</button>
+    </form>
+  </main>
 
-  <form>
-    <input type="text" placeholder="Your Name">
-    <input type="number" placeholder="Mobile Number">
-    <input type="text" placeholder="Test Name">
-    <button type="submit">Submit</button>
-  </form>
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year4"></span> Medbee Diagnostics — medbeediagnostics@gmail.com — 9334639392</p>
+    </div>
+  </footer>
 
-  <a class="whatsapp" href="https://wa.me/919334639392">Chat on WhatsApp</a>
-
+  <script>document.getElementById('year4').textContent = new Date().getFullYear();</script>
 </body>
 </html>
