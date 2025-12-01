@@ -1,46 +1,42 @@
-body {
-  font-family: Arial;
-  margin: 0;
-  padding: 0;
-  background: #f7f7f7;
+:root{
+  --blue: #005bea;
+  --lightblue: #e6f0ff;
+  --text:#222;
+  --accent:#25d366;
+  --container:1100px;
 }
+*{box-sizing:border-box}
+body{font-family: Arial, Helvetica, sans-serif; color:var(--text); margin:0; background:#fafafa; line-height:1.6}
+.container{max-width:var(--container); margin:0 auto; padding:18px}
+.site-header{background:var(--blue); color:#fff}
+.header-inner{display:flex; align-items:center; justify-content:space-between; gap:20px}
+.brand .logo{height:64px}
+.main-nav a{color:#fff; margin-left:18px; text-decoration:none; font-weight:600}
+.hero{display:flex; gap:30px; align-items:center; padding:40px 18px}
+.hero-left{flex:1}
+.hero-right{flex:1; text-align:center}
+.hero h1{font-size:42px; margin:0 0 10px}
+.lead{font-size:18px; color:#333}
+.lab-photo{max-width:100%; border-radius:8px; box-shadow:0 6px 18px rgba(0,0,0,0.07)}
+.map-section{padding:20px 18px; text-align:center}
+.india-map{max-width:360px; width:100%;}
+.map-caption{font-weight:700;margin-top:8px}
+.quick{list-style:none;padding:0;margin:18px 0}
+.quick li{margin:6px 0}
+.whatsapp{display:inline-block;background:var(--accent);color:#fff;padding:8px 14px;border-radius:6px;text-decoration:none;margin-top:6px}
+.highlights{padding:30px 18px}
+.grid-3{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px}
+.card{background:#fff;padding:16px;border-radius:8px;box-shadow:0 3px 10px rgba(0,0,0,0.05)}
+.content{padding:30px 18px;background:#fff; margin:18px 0}
+.services-list{list-style:disc; padding-left:18px}
+.contact-form input, .contact-form button{display:block; width:100%; max-width:420px; padding:10px; margin:8px 0; border-radius:6px; border:1px solid #ddd}
+.contact-form button{background:var(--blue); color:white; border:none; cursor:pointer}
+.site-footer{background:#003466;color:#fff;padding:18px;text-align:center;margin-top:18px}
 
-header {
-  background: #005bea;
-  color: #fff;
-  padding: 15px;
-}
-
-nav a {
-  color: white;
-  margin-right: 20px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.hero {
-  padding: 40px;
-  text-align: center;
-  background: #e5eefc;
-}
-
-.highlights ul {
-  padding: 20px;
-  list-style: square;
-}
-
-form input, form button {
-  display: block;
-  width: 300px;
-  padding: 12px;
-  margin: 10px 0;
-}
-
-.whatsapp {
-  display: inline-block;
-  background: #25d366;
-  padding: 12px;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
+/* responsive */
+@media(max-width:800px){
+  .hero{flex-direction:column}
+  .header-inner{flex-direction:column; align-items:flex-start}
+  .brand .logo{height:56px}
+  .main-nav{display:flex; gap:10px; margin-top:6px}
 }
