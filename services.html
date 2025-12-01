@@ -1,30 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Services – Medbee Diagnostics</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Services — Medbee Diagnostics</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Medbee Diagnostics</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand"><a href="index.html"><img src="logo.png" alt="Medbee Diagnostics" class="logo" /></a></div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <h2>Our Services</h2>
+  <main class="container content">
+    <h1>Our Services</h1>
 
-  <ul>
-    <li>Blood Test</li>
-    <li>Biochemistry</li>
-    <li>Thyroid Panel</li>
-    <li>Lipid Profile</li>
-    <li>Urine Test</li>
-    <li>Diabetes Test</li>
-  </ul>
+    <ul class="services-list">
+      <li><strong>Complete Blood Count (CBC)</strong> — Detailed blood counts and morphology.</li>
+      <li><strong>Biochemistry Panel</strong> — LFT, KFT, Lipid profile, Glucose and more.</li>
+      <li><strong>Thyroid & Hormone Tests</strong> — TSH, T3, T4 and other endocrine tests.</li>
+      <li><strong>Microbiology & Cultures</strong> — Urine, sputum and blood cultures with sensitivity.</li>
+      <li><strong>Special Tests</strong> — Autoimmune, tumor markers, Vitamin D, PCR tests.</li>
+      <li><strong>Home Sample Collection</strong> — Safe & convenient home pickup with prior booking.</li>
+    </ul>
 
+    <p>If you need a particular test that is not listed, please contact us and we will arrange it.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year3"></span> Medbee Diagnostics — medbeediagnostics@gmail.com — 9334639392</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year3').textContent = new Date().getFullYear();</script>
 </body>
 </html>
