@@ -2,117 +2,252 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Medbee Diagnostics — Home</title>
   <link rel="stylesheet" href="style.css" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #ffffff;
+      color: #222;
+    }
+
+    /* HEADER */
+    .site-header {
+      background: #0b5ed7;
+      padding: 12px 0;
+    }
+    .header-inner {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+    .logo {
+      height: 48px;
+    }
+    .main-nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 600;
+    }
+
+    /* HERO */
+    .hero {
+      max-width: 1100px;
+      margin: auto;
+      padding: 50px 20px;
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+    .hero-left h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    .hero-left p {
+      font-size: 18px;
+      color: #444;
+    }
+    .hero-right img {
+      max-width: 350px;
+      border-radius: 12px;
+    }
+
+    /* MAP + FORM */
+    .map-booking-section {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: flex;
+      gap: 30px;
+      align-items: stretch;
+    }
+
+    .map-container {
+      flex: 1;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 100%;
+      min-height: 360px;
+      border: 0;
+    }
+
+    .booking-card {
+      flex: 0 0 360px;
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 28px;
+      box-shadow: 0 10px 28px rgba(0,0,0,0.15);
+    }
+
+    .booking-card h2 {
+      margin-top: 0;
+      margin-bottom: 20px;
+      color: #0b5ed7;
+      text-align: center;
+    }
+
+    .booking-card input {
+      width: 100%;
+      padding: 12px 14px;
+      margin-bottom: 14px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 15px;
+    }
+
+    .checkbox {
+      font-size: 14px;
+      margin-bottom: 16px;
+      display: block;
+    }
+
+    .checkbox a {
+      color: #0b5ed7;
+      text-decoration: none;
+    }
+
+    .booking-card button {
+      width: 100%;
+      padding: 14px;
+      border: none;
+      border-radius: 10px;
+      background: linear-gradient(90deg, #0b5ed7, #00b4d8);
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    /* WHY CHOOSE */
+    .highlights {
+      background: #f4f7ff;
+      padding: 60px 20px;
+    }
+    .highlights h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .grid-3 {
+      max-width: 1100px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+    }
+
+    /* FOOTER */
+    .site-footer {
+      background: #0b5ed7;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 900px) {
+      .hero, .map-booking-section {
+        flex-direction: column;
+      }
+      .booking-card {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <a href="index.html"><img src="logo.png" alt="Medbee Diagnostics" class="logo" /></a>
-      </div>
-      <nav class="main-nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
 
-  <main>
-    <section class="hero container">
-      <div class="hero-left">
-        <h1>Your Trusted Diagnostic Partner</h1>
-        <p class="lead">Fast, reliable and affordable pathology & lab testing services with home sample collection and accurate reporting.</p>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html"><img src="logo.png" class="logo" alt="Medbee"></a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
 
-        <ul class="quick">
-          <li><strong>Email:</strong> <a href="mailto:info@mmedbee.in">info@medbee.in</a></li>
-          <li><strong>Phone:</strong> <a href="tel:+919334639392">9334639392</a></li>
-          <li><a class="whatsapp" href="https://wa.me/919334639392" target="_blank">Chat on WhatsApp</a></li>
-        </ul>
-      </div>
+<section class="hero">
+  <div class="hero-left">
+    <h1>Your Trusted Diagnostic Partner</h1>
+    <p>Fast, reliable & affordable pathology and lab testing services with home sample collection.</p>
+  </div>
+  <div class="hero-right">
+    <img src="Pathologylab12.jpg" alt="Lab Testing">
+  </div>
+</section>
 
-      <div class="hero-right">
-        <img src="Pathologylab12.jpg" alt="Pathology testing" style="width:350px;" />
-      </div>
-    </section>
+<section class="map-booking-section">
 
-    <section class="map-booking-section">
+  <!-- MAP -->
   <div class="map-container">
-    <iframe 
+    <iframe
       src="https://www.google.com/maps?q=Patna&output=embed"
-      allowfullscreen=""
       loading="lazy">
     </iframe>
   </div>
 
+  <!-- BOOK FORM -->
   <div class="booking-card">
     <h2>Book Test Now!</h2>
-
     <input type="text" placeholder="Name">
     <input type="tel" placeholder="Mobile Number">
     <input type="text" placeholder="Pincode">
 
     <label class="checkbox">
-      <input type="checkbox">
-      I agree to the <a href="#">T&C</a> and <a href="#">Privacy Policy</a>
+      <input type="checkbox"> I agree to the <a href="#">T&C</a> and <a href="#">Privacy Policy</a>
     </label>
 
     <button>Book Now</button>
   </div>
+
 </section>
 
-  <div class="map-form-container">
-
-    <!-- MAP -->
-    <div class="map-box">
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=YOUR_MAP_LINK"
-        loading="lazy">
-      </iframe>
+<section class="highlights">
+  <h2>Why choose Medbee Diagnostics?</h2>
+  <div class="grid-3">
+    <div class="card">
+      <h3>Accurate Reports</h3>
+      <p>Automated analyzers & expert pathologists.</p>
     </div>
-
-    <!-- BOOK TEST FORM -->
-    <div class="form-box">
-      <h2>Book Test Now!</h2>
-
-      <input type="text" placeholder="Name">
-      <input type="tel" placeholder="Mobile Number">
-      <input type="text" placeholder="Pincode">
-
-      <label class="checkbox">
-        <input type="checkbox">
-        I agree to the <a href="#">T&C</a> and <a href="#">Privacy Policy</a>
-      </label>
-
-      <button>Book Now</button>
+    <div class="card">
+      <h3>Home Collection</h3>
+      <p>Safe & convenient sample pickup.</p>
     </div>
-
+    <div class="card">
+      <h3>Fast Turnaround</h3>
+      <p>Quick processing & online reports.</p>
+    </div>
   </div>
 </section>
 
+<footer class="site-footer">
+  © <span id="year"></span> Medbee Diagnostics — Patna, Bihar
+</footer>
 
-    <section class="highlights container">
-      <h2>Why choose Medbee Diagnostics?</h2>
-      <div class="grid-3">
-        <div class="card"><h3>Accurate Reports</h3><p>Automated analyzers and experienced pathologists ensure accurate and reliable results.</p></div>
-        <div class="card"><h3>Home Collection</h3><p>Convenient home sample collection with safe packaging and timely pick-up.</p></div>
-        <div class="card"><h3>Fast Turnaround</h3><p>Quick processing and easy online report delivery.</p></div>
-      </div>
-    </section>
-  </main>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> Medbee Diagnostics — Corporate office: 107, Kharunia, Chhoti Pahari, Patna - 800007</p>
-      <p>Email: info@medbee.in | Phone: 9334639392</p>
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
